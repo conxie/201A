@@ -7,6 +7,10 @@ date: "2024-10-04"
 ```{r setup, include=FALSE}
 
 print("what's up")
-
 ```
+
+```{r}
+print("so..how's your day been?")
+```
+
 
