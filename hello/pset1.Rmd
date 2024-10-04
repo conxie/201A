@@ -1,0 +1,12 @@
+---
+title: "pset1"
+output: html_document
+date: "2024-10-04"
+---
+
+```{r setup, include=FALSE}
+
+print("what's up")
+
+```
+
