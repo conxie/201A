@@ -1,16 +1,51 @@
 ---
 title: "pset1"
-output: html_document
+output: 
+  html_document:
+    toc: true
 date: "2024-10-04"
+editor_options: 
+  chunk_output_type: inline
 ---
+
+# Header A
 
 ```{r setup, include=FALSE}
 
 print("what's up")
 ```
 
+## Header #1a
+
 ```{r}
 print("so..how's your day been?")
 ```
 
+# Header B
 
+```{r #display it when knitted}
+#install.packages("knitr")
+library(knitr)
+knitr::include_graphics("C:/Users/Connie/Pictures/Screen Shot 2021-10-20 at 2.50.04 PM.png")
+
+```
+
+```{r, echo = FALSE}
+##display it in the plot images; does not display during knit
+
+
+#install.packages("imager")
+library(imager)
+plot(load.image("C:/Users/Connie/Pictures/Screen Shot 2021-10-20 at 2.50.04 PM.png"))
+```
+
+[Link to Experimentology rMarkdown](https://experimentology.io/102-rmarkdown.html)
+
+## Moving onto Graphs
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+
+mtcars %>% head()
+```
